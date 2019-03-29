@@ -1,14 +1,14 @@
 sudo: required
 services:
-  - docker
-before_install: 
-  - docker build -t chrisvidal10/docker-react -f Dockerfile.dev .
+- docker
+before_install:
+- docker build -t chrisvidal10/docker-react -f Dockerfile.dev .
 script:
-  - docker run chrisvidal10/docker-react npm run test -- --coverage
+- docker run chrisvidal10/docker-react npm run test -- --coverage
 deploy:
   provider: heroku
   api_key:
-    secure: KEY
+    secure: VsJUhmLWarMrpOflv3+9fc0ab+1UVXutaUI7sSnrN+gAMJKa8PuREGYFRnyA1RCgQi9zlHi0Lhy3aJ+U8GHszd06meXEF7pDp4VA4ZOEhotE23sVhUKHLOgTPEWQlK031qR0OZo1TNkZt2FaxXXT74uPT3cbSppupjO0HbJ38civwFqJnSwp6Eizf7YiTH9lGY8ncd2qILn0ouLCAt+D87yB4/NYZVxlSXU8bXCJvZyzjUpdtHe12IM7pz9+f6FfsyxYKfhHLylvQcKzGZ/yTNRovPRwogIKzaSW5OivuxYQI0kExbaZMjCImWTf0oaW0caqxcHmbOlv+PoYeKWCM06p/kv1fIqR1+UJgqGbtftUy8r6SVuyD8nAqQ8yvsos/SbVXrz6g/kkTYbcSwtNajXgmZSyknvd3jDKfcDJJyASQbHSM8Ni4qiy6UCMLBoswgVduzywQ9+9R/S8TyY2lAVlI2UZhazcKQz+j6PX5kCzlRKIB9m7569dBo9iaHH0Wt0d/4rotvPSALfjjPl9014NvsilWUCwlosIg8D8uKVPhrGHWgguHXHs+0oGZRcQhBPRgJKDTU9eiyORtRmWWhyBZNdJkGGLGIRMvuyVuqgtDhtidrK/S4K6NMknRlJ+snEQ7AgupFClQ45rEbXmInu6gfI/AjxEzm2GkJd/WTY=
   app: docker-react-course
   on:
     repo: ChrisVidal10/docker-react

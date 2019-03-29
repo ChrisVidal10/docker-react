@@ -9,15 +9,15 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Hello Jose!
+            Ready chapter seven from docker - kubernetes course at Udemy!
           </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://github.com/ChrisVidal10"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            <code>@chrisvidal10</code>
           </a>
         </header>
       </div>
