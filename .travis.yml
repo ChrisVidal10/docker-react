@@ -11,4 +11,4 @@ deploy:
     secure: KEY
   app: docker-react-course
   on:
-    repo: chrisvidal10/docker-react
+    repo: ChrisVidal10/docker-react
