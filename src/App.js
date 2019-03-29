@@ -9,7 +9,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Ready chapter seven from docker - kubernetes course at Udemy!
+            Ready! 7th chapter from docker - kubernetes course at Udemy!
           </p>
           <a
             className="App-link"
